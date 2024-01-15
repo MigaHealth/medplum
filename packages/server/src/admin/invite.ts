@@ -105,7 +105,7 @@ export async function inviteUser(request: ServerInviteRequest): Promise<ServerIn
       email
     )) as Practitioner;
 
-    ctx.logger.info('Profile  created', { profile: getReferenceString(profile) });
+    ctx.logger.info('Profile created', { profile: getReferenceString(profile) });
   }
 
   const membershipTemplate = request.membership ?? {};
